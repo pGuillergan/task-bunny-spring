@@ -6,16 +6,20 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Type;
+
 
 @Entity
 @Table(name="users")
 public class Users implements Serializable{
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int userid;
 	
 	@Column(name = "username")
@@ -38,6 +42,7 @@ public class Users implements Serializable{
 	
 	@Lob
 	@Column(name = "picture")
+	@Type(type="org.hibernate.type.WrappedMaterializedBlobType")
 	private byte[] picture;
 	
 	public Users() {}
@@ -45,6 +50,7 @@ public class Users implements Serializable{
 	public Users(String username, String password, String role, String firstname, String lastname,
 			Date datejoined, byte[] picture) {
 		super();
+		
 		this.username = username;
 		this.password = password;
 		this.role = role;
