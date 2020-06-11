@@ -24,12 +24,7 @@ pipeline {
            }
 
         }
-        stage('Install maven dependencies'){
-            steps{
-                sh 'mvn clean install'
-            }
-
-        }
+      
          stage('Destroy Old Server') {
             steps {
                 script {
@@ -42,6 +37,13 @@ pipeline {
                     }
                 }
             }
+        }
+
+          stage('Install maven dependencies'){
+            steps{
+                sh 'mvn clean install'
+            }
+
         }
 
         stage ('Run Spring App') {
