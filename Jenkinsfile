@@ -3,7 +3,6 @@ pipeline {
 	
     environment{
         JENKINS_NODE_COOKIE = 'dontkillmeplease'
-
     } 
     stages{
     
@@ -18,11 +17,7 @@ pipeline {
            }
 
         }
-       /*  stage ('Build') {
-            steps {
-               // sh 'mvn install' 
-            }
-        } */
+
         stage ('Run Spring App') {
             steps {
                 sh 'nohup mvn spring-boot:run &' 
