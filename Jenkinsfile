@@ -10,9 +10,8 @@ pipeline {
               // clean the workspace
               cleanWs()
             }
-        }    
-    stages{
-    
+        }
+            
         stage('Download') {
            steps {
               // Download code from a GitHub repository
@@ -36,6 +35,6 @@ pipeline {
                 sh 'nohup mvn spring-boot:run &' 
             }
         }
-    }
-
+    
+     }
 }
