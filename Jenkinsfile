@@ -13,7 +13,7 @@ pipeline {
             }
         }
             
-        stage('Download') {
+        stage('Download Repository') {
            steps {
               // Download code from a GitHub repository
               // branch: the branch that you want to build
