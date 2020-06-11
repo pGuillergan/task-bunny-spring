@@ -15,7 +15,7 @@ import com.taskbunny.service.RatingsService;
 
 @Controller
 @ResponseBody
-@CrossOrigin
+@CrossOrigin(origins = "", allowedHeaders = "")
 public class RatingsController {
 	
 	@Autowired
