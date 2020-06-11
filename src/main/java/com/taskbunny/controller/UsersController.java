@@ -16,7 +16,7 @@ import com.taskbunny.service.UsersService;
 
 @Controller
 @ResponseBody
-@CrossOrigin(origins = "", allowedHeaders = "")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsersController {
 	
 	@Autowired

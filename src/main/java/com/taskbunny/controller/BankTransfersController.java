@@ -16,7 +16,7 @@ import com.taskbunny.service.BankTransfersService;
 
 @Controller
 @ResponseBody
-@CrossOrigin(origins = "", allowedHeaders = "")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class BankTransfersController {
 
 		@Autowired
