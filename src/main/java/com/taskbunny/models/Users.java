@@ -3,19 +3,23 @@ package com.taskbunny.models;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
+
 
 @Entity
 @Table(name="users")
 public class Users implements Serializable{
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int userid;
 	
 	@Column(name = "username")
@@ -36,8 +40,9 @@ public class Users implements Serializable{
 	@Column(name = "datejoined")
 	private Date datejoined;
 	
-	@Lob
+//	@Lob
 	@Column(name = "picture")
+	@Basic(fetch = FetchType.LAZY)
 	private byte[] picture;
 	
 	public Users() {}
@@ -45,6 +50,7 @@ public class Users implements Serializable{
 	public Users(String username, String password, String role, String firstname, String lastname,
 			Date datejoined, byte[] picture) {
 		super();
+		
 		this.username = username;
 		this.password = password;
 		this.role = role;
