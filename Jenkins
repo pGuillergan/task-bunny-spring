@@ -1,10 +1,18 @@
-pipeline { 
-    agent any  
-    stages { 
-        stage('Build') { 
-            steps { 
-               echo 'This is a minimal pipeline....' 
-            }
+pipeline {
+    agent any
+	
+    environment{
+        JENKINS_NODE_COOKIE = 'dontkillmeplease'
+        PORT=3000
+    } 
+    stages{
+        stage('Download') {
+           steps {
+              // Download code from a GitHub repository
+              // branch: the branch that you want to build
+              // credentialsId: the ID of the credentials for your GitLab repo that is being managed by Jenkins
+              // url: url to your repo
+              git branch: 'master', credentialsId: 'a092822c-5a98-4ee7-9fcc-885ef8363fef', url: 'https://github.com/pGuillergan/task-bunny-spring.git'
+              
+           }
         }
-    }
-}
