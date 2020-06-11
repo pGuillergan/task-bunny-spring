@@ -3,15 +3,15 @@ package com.taskbunny.models;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.Type;
 
 
 @Entity
@@ -40,9 +40,9 @@ public class Users implements Serializable{
 	@Column(name = "datejoined")
 	private Date datejoined;
 	
-	@Lob
+//	@Lob
 	@Column(name = "picture")
-	@Type(type="org.hibernate.type.WrappedMaterializedBlobType")
+	@Basic(fetch = FetchType.LAZY)
 	private byte[] picture;
 	
 	public Users() {}
