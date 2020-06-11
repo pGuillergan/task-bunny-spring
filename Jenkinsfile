@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Install maven dependencies'){
             steps{
-                sh 'mvn install'
+                sh 'mvn clean install'
             }
 
         }
