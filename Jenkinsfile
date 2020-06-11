@@ -4,6 +4,13 @@ pipeline {
     environment{
         JENKINS_NODE_COOKIE = 'dontkillmeplease'
     } 
+     stages {
+        stage('Preparation') { // for display purposes
+            steps {
+              // clean the workspace
+              cleanWs()
+            }
+        }    
     stages{
     
         stage('Download') {
@@ -15,6 +22,12 @@ pipeline {
               git branch: 'master', credentialsId: 'd8d9e999-e44a-4924-950f-f767f4ebbcdd', url: 'https://github.com/pGuillergan/task-bunny-spring.git'
               
            }
+
+        }
+        stage('Install maven dependencies'){
+            steps{
+                sh 'mvn install'
+            }
 
         }
 
