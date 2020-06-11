@@ -6,6 +6,7 @@ pipeline {
         PORT=3000
     } 
     stages{
+    
         stage('Download') {
            steps {
               // Download code from a GitHub repository
@@ -15,6 +16,13 @@ pipeline {
               git branch: 'master', credentialsId: 'd8d9e999-e44a-4924-950f-f767f4ebbcdd', url: 'https://github.com/pGuillergan/task-bunny-spring.git'
               
            }
+
         }
+            stage ('Build') {
+            steps {
+                sh 'mvn -Dmaven.test.failure.ignore=true install' 
+            }
+            }
     }
+
 }
