@@ -3,7 +3,7 @@ pipeline {
 	
     environment{
         JENKINS_NODE_COOKIE = 'dontkillmeplease'
-        PORT=3000
+
     } 
     stages{
     
@@ -18,16 +18,16 @@ pipeline {
            }
 
         }
-            stage ('Build') {
+       /*  stage ('Build') {
             steps {
-                sh 'mvn install' 
+               // sh 'mvn install' 
             }
-            }
-              stage ('Run Spring App') {
+        } */
+        stage ('Run Spring App') {
             steps {
                 sh 'nohup mvn spring-boot:run &' 
             }
-            }
+        }
     }
 
 }
