@@ -20,7 +20,12 @@ pipeline {
         }
             stage ('Build') {
             steps {
-                sh 'mvn clean install' 
+                sh 'mvn install' 
+            }
+            }
+              stage ('Run Spring App') {
+            steps {
+                sh 'nohup mvn spring-boot:run &' 
             }
             }
     }
