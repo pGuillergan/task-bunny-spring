@@ -1,6 +1,7 @@
 package com.taskbunny.controller;
 
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
@@ -48,7 +49,7 @@ public class UsersController {
 	}
 	
 	@GetMapping("/users/GetProvideName/{providerid}")
-	public Optional<Users> getProviderName(@PathVariable("providerid") int providerid){
+	public List<String> getProviderName(@PathVariable("providerid") int providerid){
 		return us.getProviderName(providerid);
 	}
 

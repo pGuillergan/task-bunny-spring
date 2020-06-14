@@ -47,7 +47,7 @@ public class UsersService{
 
 
 
-	public Optional<Users> getProviderName(int providerid) {
+	public List<String> getProviderName(int providerid) {
 		// TODO Auto-generated method stub
 		return ur.getProviderName(providerid);
 	}

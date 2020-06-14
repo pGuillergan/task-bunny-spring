@@ -1,6 +1,7 @@
 package com.taskbunny.repository;
 
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
@@ -27,7 +28,7 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	void updatePicture(@Param("id") int id,@Param("picture") byte[] picture);
 
 	@Query
-	(value = "SELECT firstname,lastname FROM Users JOIN Tasks ON Users.userid=Tasks.providerid  WHERE Users.userid = :providerid LIMIT 1",nativeQuery = true)
-	Optional<Users> getProviderName(int providerid);
+	(value = "SELECT firstname,lastname FROM Users JOIN Tasks ON Users.userid=Tasks.providerid  WHERE Users.userid = :providerid",nativeQuery = true)
+	List<String> getProviderName(@Param("providerid") int providerid);
 
 }

@@ -50,7 +50,7 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
 	void deleteByTaskID(@Param("taskid") int id);
 	
 
-	//join tasks and users by clientID and ProviderID
+	//join tasks and users by clientID and ProviderID----
 	//get, post for banktransfers
 	//get by clientid and providerid for ratings
 	//delete tasks, users 
