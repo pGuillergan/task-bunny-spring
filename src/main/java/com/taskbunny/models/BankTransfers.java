@@ -18,7 +18,6 @@ public class BankTransfers implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "bankid", unique = true, nullable = false)
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bankid;
 	
 	@Column(name = "clientid")

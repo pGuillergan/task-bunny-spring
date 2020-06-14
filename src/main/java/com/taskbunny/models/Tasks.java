@@ -39,14 +39,6 @@ public class Tasks implements Serializable{
 	@Column(name = "providerid")
 	private int providerid;
 	
-<<<<<<< HEAD
-	
-=======
-	@Id
-	@Column(name = "taskid")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int taskid;
->>>>>>> 70b65f022b999a5bd20ad4609a98cc7142ed3a20
 	
 	public Tasks() {}
 

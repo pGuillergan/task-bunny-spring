@@ -16,7 +16,6 @@ public class Ratings implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ratingsid")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ratingsid;
 	
 	@Column(name = "clientid")
