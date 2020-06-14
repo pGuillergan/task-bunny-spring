@@ -14,7 +14,6 @@ import javax.persistence.Table;
 public class Ratings implements Serializable{
 
 	@Id
-	@Column(name = "ratingsid")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ratingsid;
 	
@@ -35,6 +34,14 @@ public class Ratings implements Serializable{
 	public Ratings(int ratingsid, int clientid, int providerid, String feedback, int ratings) {
 		super();
 		this.ratingsid = ratingsid;
+		this.clientid = clientid;
+		this.providerid = providerid;
+		this.feedback = feedback;
+		this.ratings = ratings;
+	}
+	
+	public Ratings(int clientid, int providerid, String feedback, int ratings) {
+		super();
 		this.clientid = clientid;
 		this.providerid = providerid;
 		this.feedback = feedback;

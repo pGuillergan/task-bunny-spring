@@ -23,7 +23,7 @@ public class Users implements Serializable{
 	private int userid;
 	
 	@Column(name = "username")
-	private String username;
+	private String userName;
 	
 	@Column(name = "password")
 	private String password;
@@ -47,11 +47,11 @@ public class Users implements Serializable{
 	
 	public Users() {}
 
-	public Users(String username, String password, String role, String firstname, String lastname,
+	public Users(String userName, String password, String role, String firstname, String lastname,
 			Date datejoined, byte[] picture) {
 		super();
 		
-		this.username = username;
+		this.userName = userName;
 		this.password = password;
 		this.role = role;
 		this.firstname = firstname;
@@ -61,11 +61,11 @@ public class Users implements Serializable{
 	}
 
 
-	public Users(int userid, String username, String password, String role, String firstname, String lastname,
+	public Users(int userid, String userName, String password, String role, String firstname, String lastname,
 			Date datejoined, byte[] picture) {
 		super();
 		this.userid = userid;
-		this.username = username;
+		this.userName = userName;
 		this.password = password;
 		this.role = role;
 		this.firstname = firstname;
@@ -86,11 +86,11 @@ public class Users implements Serializable{
 	}
 
 	public String getUsername() {
-		return username;
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUsername(String userName) {
+		this.userName = userName;
 	}
 
 	public String getPassword() {
