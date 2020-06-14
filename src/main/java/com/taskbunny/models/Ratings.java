@@ -15,6 +15,7 @@ public class Ratings implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ratingsid")
 	private int ratingsid;
 	
 	@Column(name = "clientid")

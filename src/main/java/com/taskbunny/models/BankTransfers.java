@@ -16,8 +16,8 @@ import javax.persistence.Table;
 public class BankTransfers implements Serializable{
 	
 	@Id
-	@Column(name = "bankid", unique = true, nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "bankid", unique = true, nullable = false)
 	private int bankid;
 	
 	@Column(name = "clientid")

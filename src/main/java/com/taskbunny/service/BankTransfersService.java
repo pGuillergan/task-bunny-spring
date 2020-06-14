@@ -21,5 +21,10 @@ public class BankTransfersService {
 	public List<BankTransfers> findAll(){
 		return btr.findAll();
 	}
+
+	public String getTransferDetails(int bankid) {
+
+		return btr.getTransferDetails(bankid);
+	}
 	
 }
