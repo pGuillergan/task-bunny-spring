@@ -4,12 +4,19 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="tasks")
 public class Tasks implements Serializable{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "taskid")
+	private int taskid;
 	
 	@Column(name = "name")
 	private String name;
@@ -32,14 +39,12 @@ public class Tasks implements Serializable{
 	@Column(name = "providerid")
 	private int providerid;
 	
-	@Id
-	@Column(name = "taskid")
-	private int taskid;
+	
 	
 	public Tasks() {}
 
-	public Tasks(String name, String category, String description, String status, double amountpaid, int clientid,
-			int providerid, int taskid) {
+	public Tasks(int taskid,String name, String category, String description, String status, double amountpaid, int clientid,
+			int providerid) {
 		super();
 		this.name = name;
 		this.category = category;
