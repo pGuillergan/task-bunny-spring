@@ -26,14 +26,13 @@ import com.taskbunny.service.TasksService;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TasksController {
 	
-	Logger logger=LoggerFactory.getLogger(TasksController.class);
+
 	
 	@Autowired
 	TasksService ts;
 	
 	@GetMapping("/tasks")
 	public List<Tasks> findAllTask(){
-		logger.info("path to task accessed");
 		return ts.findAll();
 	}
 	
