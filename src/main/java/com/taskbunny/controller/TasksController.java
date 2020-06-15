@@ -23,7 +23,7 @@ import com.taskbunny.models.Tasks;
 import com.taskbunny.service.TasksService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "POST,GET")
 public class TasksController {
 	
 	private static final Logger logger=LoggerFactory.getLogger(TasksController.class);
