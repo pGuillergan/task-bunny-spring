@@ -53,7 +53,7 @@ public class TasksService {
 		
 	}
 
-	public double computeEarnings(int providerid) {
+	public double computeEarnings(String providerid) {
 		return tr.totalEarnings(providerid);
 	}
 

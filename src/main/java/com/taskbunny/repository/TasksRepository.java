@@ -30,7 +30,7 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
 	
 	@Query
 	(value = "SELECT sum(amountpaid) FROM Tasks WHERE Tasks.providerid = :providerid",nativeQuery = true)
-	double totalEarnings(@Param("providerid") int providerid);
+	double totalEarnings(@Param("providerid") String providerid);
 	
 
 	@Modifying(clearAutomatically = true)
