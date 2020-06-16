@@ -33,8 +33,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
+		
+//		http.cors();
+		
 		http.authorizeRequests()
 			.antMatchers("/users").hasRole("CLIENT")
+			.antMatchers("/tasks").hasRole("CLIENT")
 //			.antMatchers("/users").hasAnyRole("client", "provider")
 			.antMatchers("/", "static/css", "static/js").permitAll()
 			.and().formLogin();
