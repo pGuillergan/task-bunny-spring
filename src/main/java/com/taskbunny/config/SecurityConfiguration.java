@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -37,13 +38,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().and();
-		http.httpBasic().disable();
+//		http.httpBasic().disable();
 		http.authorizeRequests()
 			.antMatchers("/users").hasRole("CLIENT")
 			.antMatchers("/tasks").hasRole("CLIENT")
 //			.antMatchers("/users").hasAnyRole("client", "provider")
 			.antMatchers("/task").hasRole("PROVIDER")
-			.antMatchers("/users").hasRole("PROVIDER")
+//			.antMatchers("/users").hasRole("PROVIDER")
 			.antMatchers("/tasks").hasRole("CLIENT")
 			.antMatchers("/", "static/css", "static/js").permitAll()
 			.and().formLogin();
@@ -60,6 +61,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 			.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 		
+	}
+	
+	@Override
+	public void configure(WebSecurity web) throws Exception {
+	    web.ignoring().antMatchers("/usersregister");
 	}
 	
 	@Override

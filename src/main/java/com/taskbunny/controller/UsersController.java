@@ -82,12 +82,13 @@ public class UsersController {
 		return us.getProviderIDByUserName(username);
 	}
 
-
-	
-	
-	@PostMapping("/users")
+	@PostMapping("/usersregister")
 	public Users postUsers(@RequestBody Users users) {
 		us.saveUser(users);
+		System.out.println(users.getUsername());
+		System.out.println(users.getPassword());
+		System.out.println(users.getFirstname());
+		System.out.println(users.getRole());
 		return users;
 	}
 	
