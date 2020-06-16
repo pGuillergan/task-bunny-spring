@@ -45,6 +45,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 			.antMatchers("/role").hasAnyRole("PROVIDER","CLIENT")
 			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER")
 			.antMatchers("/users").hasRole("ADMIN")
+			.antMatchers("/providerDetails/**").hasRole("PROVIDER")
 			//.antMatchers("/tasks").hasAnyRole("CLIENT","ADMIN","PROVIDER")
 			.antMatchers("/tasks/**").hasAnyRole("CLIENT","PROVIDER")
 			.antMatchers("/task/**").hasAnyRole("PROVIDER","ADMIN")
