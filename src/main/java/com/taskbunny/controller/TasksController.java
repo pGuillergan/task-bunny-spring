@@ -95,6 +95,10 @@ public class TasksController {
 		
 	}
 	
+	@GetMapping("/tasks/mytask/{username}")
+	public Collection<Tasks> getTaskByUsername(@PathVariable("username") String username){
+		return ts.findByUsername(username);
+	}
 
 	
 	
