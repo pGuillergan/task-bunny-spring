@@ -78,7 +78,7 @@ public class UsersController {
 	}
 	*/
 	@GetMapping("/users/userByname/{username}")
-	public String getProviderIDByUsername(@PathVariable("username") String username){
+	public int getProviderIDByUsername(@PathVariable("username") String username){
 		return us.getProviderIDByUserName(username);
 	}
 
