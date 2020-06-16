@@ -54,7 +54,7 @@ public class UsersService{
 
 
 
-	public String getUserRoleByProviderID(int providerid) {
+	public String getUserRoleByProviderID(String providerid) {
 		// TODO Auto-generated method stub
 		return ur.getUserRoleByProviderID(providerid);
 	}

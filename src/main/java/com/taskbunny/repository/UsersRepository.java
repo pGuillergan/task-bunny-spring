@@ -43,7 +43,7 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	
 	@Query
 	(value = "SELECT role FROM Users WHERE Users.userid = :providerid",nativeQuery = true)
-	String getUserRoleByProviderID(int providerid);
+	String getUserRoleByProviderID(String providerid);
 	
 	
 	
