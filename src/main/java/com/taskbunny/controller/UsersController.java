@@ -59,10 +59,8 @@ public class UsersController {
 	public Collection<Users> filter(){
 		return us.filter();		
 	}
-	/*@PutMapping("/users"){
-		
-		
-	}*/
+	
+	
 
 	@GetMapping("/users/{id}")
 	public Optional<Users> getOneUser(@PathVariable("id") int id){
@@ -73,6 +71,17 @@ public class UsersController {
 	public List<String> getProviderName(@PathVariable("providerid") int providerid){
 		return us.getProviderName(providerid);
 	}
+	
+	@GetMapping("/users/userbyname/{firstname}")
+	public int getUserIDByFirstname(@PathVariable("firstname") String firstname){
+		return us.getUserIDByFirstName(firstname);
+	}
+	
+	@GetMapping("/users/username/{username}")
+	public int getProviderIDByUsername(@PathVariable("username") String username){
+		return us.getProviderIDByUserName(username);
+	}
+
 
 	
 	

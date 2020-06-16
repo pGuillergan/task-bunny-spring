@@ -52,6 +52,23 @@ public class UsersService{
 		return ur.getProviderName(providerid);
 	}
 
+
+
+	public int getUserIDByFirstName(String firstname) {
+		// TODO Auto-generated method stub
+		return ur.getUserIDByFirstname(firstname);
+	}
+
+
+
+	public int getProviderIDByUserName(String username) {
+		// TODO Auto-generated method stub
+		return ur.getProviderIDByUserName(username);
+	}
+
+
+
+	
 	
 	
 }

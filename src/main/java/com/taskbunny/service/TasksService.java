@@ -68,6 +68,11 @@ public class TasksService {
 		return tr.findById(id);
 	}
 
+	public int getTotalTasksForAProvider(int providerid) {
+		// TODO Auto-generated method stub
+		return tr.getTotalTasksForAProvider(providerid);
+	}
+
 
 	
 }

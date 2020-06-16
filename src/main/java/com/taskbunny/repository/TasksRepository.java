@@ -49,6 +49,10 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
     @Query(value = "delete from Tasks where taskid = :taskid",nativeQuery = true)
 	void deleteByTaskID(@Param("taskid") int id);
 	
+	@Query
+	(value = "SELECT count(taskid) FROM Tasks WHERE Tasks.providerid = :providerid",nativeQuery = true)
+	int getTotalTasksForAProvider(@Param("providerid") int providerid);
+	
 
 	//join tasks and users by clientID and ProviderID----
 	//get, post for banktransfers

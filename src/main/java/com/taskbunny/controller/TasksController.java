@@ -23,16 +23,17 @@ import com.taskbunny.models.Tasks;
 import com.taskbunny.service.TasksService;
 
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "POST,GET")
 public class TasksController {
 	
-
+	private static final Logger logger=LoggerFactory.getLogger(TasksController.class);
 	
 	@Autowired
 	TasksService ts;
 	
 	@GetMapping("/tasks")
 	public List<Tasks> findAllTask(){
+		logger.info("/task path was accessed by set request");
 		return ts.findAll();
 	}
 	
@@ -56,7 +57,11 @@ public class TasksController {
 	public double getTotalEarnings(@PathVariable("providerid") int providerid){
 		return ts.computeEarnings(providerid);
 	}
-
+	
+	@GetMapping("/tasks/totaltasks/{providerid}")
+	public int getTotalTasksForAProvider(@PathVariable("providerid") int providerid){
+		return ts.getTotalTasksForAProvider(providerid);
+	}
 	
 	
 	@GetMapping("/tasks/{category}")
