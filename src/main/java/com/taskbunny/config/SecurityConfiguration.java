@@ -40,12 +40,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		http.cors().and();
 //		http.httpBasic().disable();
 		http.authorizeRequests()
-			.antMatchers("/users").hasRole("CLIENT")
-			.antMatchers("/role").hasRole("CLIENT")
-			.antMatchers("/role").hasRole("PROVIDER")
-//			.antMatchers("/users").hasAnyRole("client", "provider")
-//			.antMatchers("/users").hasRole("PROVIDER")
-			.antMatchers("/tasks").hasRole("CLIENT")
+			.antMatchers("/role").hasAnyRole("PROVIDER","CLIENT")
+			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER","ADMIN")
+			.antMatchers("/tasks").hasAnyRole("CLIENT","ADMIN")
+			.antMatchers("/tasks/**").hasAnyRole("CLIENT","ADMIN")
+			.antMatchers("/task/**").hasAnyRole("PROVIDER","ADMIN")
 			.antMatchers("/", "static/css", "static/js").permitAll()
 			.and().formLogin();
 		

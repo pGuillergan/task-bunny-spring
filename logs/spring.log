@@ -238,3 +238,33 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 2020-06-16 00:37:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-06-16 00:37:36 - HikariPool-1 - Shutdown initiated...
 2020-06-16 00:37:36 - HikariPool-1 - Shutdown completed.
+2020-06-16 12:56:28 - Starting TaskBunnySpringApplication on Tharindra with PID 1520 (C:\Users\terry\OneDrive\Desktop\Java\task-bunny-spring\target\classes started by terry in C:\Users\terry\OneDrive\Desktop\Java\task-bunny-spring)
+2020-06-16 12:56:28 - No active profile set, falling back to default profiles: default
+2020-06-16 12:56:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-16 12:56:30 - Finished Spring Data repository scanning in 185ms. Found 4 JPA repository interfaces.
+2020-06-16 12:56:33 - Tomcat initialized with port(s): 8081 (http)
+2020-06-16 12:56:33 - Starting service [Tomcat]
+2020-06-16 12:56:33 - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-16 12:56:33 - Initializing Spring embedded WebApplicationContext
+2020-06-16 12:56:33 - Root WebApplicationContext: initialization completed in 4825 ms
+2020-06-16 12:56:34 - HikariPool-1 - Starting...
+2020-06-16 12:56:35 - HikariPool-1 - Start completed.
+2020-06-16 12:56:35 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
+2020-06-16 12:56:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-16 12:56:37 - HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-16 12:56:38 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-16 12:56:38 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-16 12:56:42 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-16 12:56:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 12:56:43 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-16 12:56:44 - Creating filter chain: Ant [pattern='/usersregister'], []
+2020-06-16 12:56:44 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22048bd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@44faa4f2, org.springframework.security.web.header.HeaderWriterFilter@2ad7bd26, org.springframework.web.filter.CorsFilter@566c1e71, org.springframework.security.web.authentication.logout.LogoutFilter@37d699a1, com.taskbunny.filters.JwtRequestFilter@53314f76, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4af7dd6a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3af236d0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2e2f20b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1216eb3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5514579e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@504497fa, org.springframework.security.web.session.SessionManagementFilter@69b3886f, org.springframework.security.web.access.ExceptionTranslationFilter@3ffd4b12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1aedf08d]
+2020-06-16 12:56:45 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 12:56:45 - Tomcat started on port(s): 8081 (http) with context path ''
+2020-06-16 12:56:45 - Started TaskBunnySpringApplication in 17.393 seconds (JVM running for 18.767)
+2020-06-16 12:56:45 - App is Running Smoothly
+2020-06-16 13:01:10 - Application shutdown requested.
+2020-06-16 13:01:10 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-16 13:01:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-16 13:01:10 - HikariPool-1 - Shutdown initiated...
+2020-06-16 13:01:10 - HikariPool-1 - Shutdown completed.
