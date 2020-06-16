@@ -87,7 +87,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	        return source;
 	    }
 
-	 @Bean
+/*	 @Bean
 	 public WebSecurityConfigurerAdapter webSecurity() {
 	     return new WebSecurityConfigurerAdapter() {
 
@@ -99,5 +99,5 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
 	         }
 	     };
-	 }
+	 }*/
 }
