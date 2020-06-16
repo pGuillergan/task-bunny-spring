@@ -12,9 +12,11 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.header.writers.StaticHeadersWriter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 import com.taskbunny.filters.JwtRequestFilter;
 import com.taskbunny.service.MyUserDetailsService;
@@ -41,9 +43,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 //		http.httpBasic().disable();
 		http.authorizeRequests()
 			.antMatchers("/role").hasAnyRole("PROVIDER","CLIENT")
-			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER","ADMIN")
-			.antMatchers("/tasks").hasAnyRole("CLIENT", "PROVIDER")
-			.antMatchers("/tasks/**").hasAnyRole("CLIENT","ADMIN")
+			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER")
+			.antMatchers("/users").hasRole("ADMIN")
+			//.antMatchers("/tasks").hasAnyRole("CLIENT","ADMIN","PROVIDER")
+			.antMatchers("/tasks/**").hasAnyRole("CLIENT","PROVIDER")
 			.antMatchers("/task/**").hasAnyRole("PROVIDER","ADMIN")
 			.antMatchers("/", "static/css", "static/js").permitAll()
 			.and().formLogin();
@@ -83,4 +86,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	        source.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues());
 	        return source;
 	    }
+
+/*	 @Bean
+	 public WebSecurityConfigurerAdapter webSecurity() {
+	     return new WebSecurityConfigurerAdapter() {
+
+	         @Override
+	         protected void configure(HttpSecurity http) throws Exception {
+	             http.headers().addHeaderWriter(
+	                     new StaticHeadersWriter("Access-Control-Allow-Origin", "*"));
+
+
+	         }
+	     };
+	 }*/
 }

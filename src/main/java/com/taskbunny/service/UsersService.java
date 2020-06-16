@@ -68,6 +68,13 @@ public class UsersService{
 
 
 
+	public List<String> getProviderDetailsByID(int providerid) {
+		// TODO Auto-generated method stub
+		return ur.getProviderDetailsByID(providerid);
+	}
+
+
+
 	
 	
 	
