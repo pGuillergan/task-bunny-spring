@@ -33,7 +33,7 @@ public class TasksController {
 	
 	@GetMapping("/tasks")
 	public List<Tasks> findAllTask(){
-		logger.info("/task path was accessed");
+		logger.info("/task path was accessed by set request");
 		return ts.findAll();
 	}
 	
