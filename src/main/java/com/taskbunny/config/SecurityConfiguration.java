@@ -41,9 +41,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 //		http.httpBasic().disable();
 		http.authorizeRequests()
 			.antMatchers("/users").hasRole("CLIENT")
-			.antMatchers("/tasks").hasRole("CLIENT")
 			.antMatchers("/role").hasRole("CLIENT")
-			.antMatchers("/tasks").hasRole("PROVIDER")
 //			.antMatchers("/users").hasAnyRole("client", "provider")
 			.antMatchers("/task").hasRole("PROVIDER")
 //			.antMatchers("/users").hasRole("PROVIDER")
