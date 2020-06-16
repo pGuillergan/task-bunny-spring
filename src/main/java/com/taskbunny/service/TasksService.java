@@ -72,7 +72,11 @@ public class TasksService {
 		// TODO Auto-generated method stub
 		return tr.getTotalTasksForAProvider(providerid);
 	}
-
+	
+	public Collection<Tasks> findByUsername(String username) {
+		// TODO Auto-generated method stub
+		return tr.findByUsername(username);
+	}
 
 	
 }
