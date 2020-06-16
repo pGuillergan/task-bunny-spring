@@ -59,10 +59,11 @@ public class UsersController {
 	public Collection<Users> filter(){
 		return us.filter();		
 	}
-	/*@PutMapping("/users"){
-		
-		
-	}*/
+	
+	@GetMapping("/users/{username}")
+	public int findUsersByUsername(@PathVariable("username") String username){
+		return us.findUsersByUsername(username);		
+	}
 
 	@GetMapping("/users/{id}")
 	public Optional<Users> getOneUser(@PathVariable("id") int id){

@@ -52,6 +52,13 @@ public class UsersService{
 		return ur.getProviderName(providerid);
 	}
 
+
+
+	public int findUsersByUsername(String username) {
+		// TODO Auto-generated method stub
+		return ur.findUsersByUsername(username);
+	}
+
 	
 	
 }

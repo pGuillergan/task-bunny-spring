@@ -42,6 +42,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 			.antMatchers("/users").hasRole("CLIENT")
 //			.antMatchers("/users").hasAnyRole("client", "provider")
 			.antMatchers("/task").hasRole("PROVIDER")
+			.antMatchers("/users").hasRole("PROVIDER")
 			.antMatchers("/tasks").hasRole("CLIENT")
 			.antMatchers("/", "static/css", "static/js").permitAll()
 			.and().formLogin();
