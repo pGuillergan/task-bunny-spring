@@ -34,7 +34,14 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	List<String> getProviderName(@Param("providerid") int providerid);
 	
 	@Query
+	(value = "SELECT userid FROM USERS WHERE USERS.firstname = :firstname",nativeQuery = true)
+	int getUserIDByFirstname(String firstname);
+	
+	@Query
 	(value = "SELECT userid FROM USERS WHERE USERS.username = :username",nativeQuery = true)
-	int findUsersByUsername(@Param("username") String username);
+	int getProviderIDByUserName(String username);
+	
+	
+	
 
 }

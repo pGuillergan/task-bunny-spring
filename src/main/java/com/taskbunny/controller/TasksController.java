@@ -57,7 +57,11 @@ public class TasksController {
 	public double getTotalEarnings(@PathVariable("providerid") int providerid){
 		return ts.computeEarnings(providerid);
 	}
-
+	
+	@GetMapping("/tasks/totaltasks/{providerid}")
+	public int getTotalTasksForAProvider(@PathVariable("providerid") int providerid){
+		return ts.getTotalTasksForAProvider(providerid);
+	}
 	
 	
 	@GetMapping("/tasks/{category}")
