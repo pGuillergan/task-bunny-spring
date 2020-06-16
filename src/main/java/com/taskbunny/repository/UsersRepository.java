@@ -33,13 +33,13 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	(value = "SELECT firstname,lastname FROM Users JOIN Tasks ON Users.userid=Tasks.providerid  WHERE Users.userid = :providerid",nativeQuery = true)
 	List<String> getProviderName(@Param("providerid") int providerid);
 	
-	@Query
+	/*@Query
 	(value = "SELECT userid FROM USERS WHERE USERS.firstname = :firstname",nativeQuery = true)
-	int getUserIDByFirstname(String firstname);
+	int getUserIDByFirstname(String firstname);*/
 	
 	@Query
-	(value = "SELECT userid FROM USERS WHERE USERS.username = :username",nativeQuery = true)
-	int getProviderIDByUserName(String username);
+	(value = "SELECT userid FROM Users WHERE Users.username = :username",nativeQuery = true)
+	int getProviderIDByUserName(@Param("username") String username);
 	
 	
 	

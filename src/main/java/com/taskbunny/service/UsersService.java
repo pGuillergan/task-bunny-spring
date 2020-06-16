@@ -54,11 +54,11 @@ public class UsersService{
 
 
 
-	public int getUserIDByFirstName(String firstname) {
+	/*public int getUserIDByFirstName(String firstname) {
 		// TODO Auto-generated method stub
 		return ur.getUserIDByFirstname(firstname);
 	}
-
+*/
 
 
 	public int getProviderIDByUserName(String username) {
