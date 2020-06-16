@@ -61,7 +61,7 @@ public class UsersService{
 */
 
 
-	public int getProviderIDByUserName(String username) {
+	public String getProviderIDByUserName(String username) {
 		// TODO Auto-generated method stub
 		return ur.getProviderIDByUserName(username);
 	}
