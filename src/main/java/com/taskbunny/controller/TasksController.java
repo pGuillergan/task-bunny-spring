@@ -54,13 +54,13 @@ public class TasksController {
 	}
 	
 	@GetMapping("/tasks/totalEarnings/{providerid}")
-	public double getTotalEarnings(@PathVariable("providerid") String providerid){
-		return ts.computeEarnings(Integer.parseInt(providerid));
+	public double getTotalEarnings(@PathVariable("providerid") int providerid){
+		return ts.computeEarnings(providerid);
 	}
 	
 	@GetMapping("/tasks/totaltasks/{providerid}")
-	public int getTotalTasksForAProvider(@PathVariable("providerid") String providerid){
-		return ts.getTotalTasksForAProvider(Integer.parseInt(providerid));
+	public int getTotalTasksForAProvider(@PathVariable("providerid") int providerid){
+		return ts.getTotalTasksForAProvider(providerid);
 	}
 	
 	
