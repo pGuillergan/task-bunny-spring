@@ -43,7 +43,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 			.antMatchers("/users").hasRole("CLIENT")
 			.antMatchers("/role").hasRole("CLIENT")
 			.antMatchers("/role").hasRole("PROVIDER")
-//			.antMatchers("/users").hasAnyRole("client", "provider")
+//			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER")
 //			.antMatchers("/users").hasRole("PROVIDER")
 			.antMatchers("/tasks").hasRole("CLIENT")
 			.antMatchers("/", "static/css", "static/js").permitAll()
