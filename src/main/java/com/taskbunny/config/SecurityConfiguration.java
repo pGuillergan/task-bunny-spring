@@ -15,6 +15,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 import com.taskbunny.filters.JwtRequestFilter;
 import com.taskbunny.service.MyUserDetailsService;
@@ -84,4 +85,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	        source.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues());
 	        return source;
 	    }
+
+	
+	     public void addCorsMappings(CorsRegistry registry) {
+	         registry.addMapping("/tasks/**")
+	             .allowedOrigins("*")
+	             .allowedMethods("PUT", "DELETE","GET","POST")
+	             .allowedHeaders("Content-Type")
+	             .allowCredentials(false).maxAge(3600);
+	     }
+	 
 }
