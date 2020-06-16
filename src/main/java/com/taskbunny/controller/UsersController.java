@@ -72,11 +72,11 @@ public class UsersController {
 		return us.getProviderName(providerid);
 	}
 	
-/*	@GetMapping("/users/userbyname/{firstname}")
-	public int getUserIDByFirstname(@PathVariable("firstname") String firstname){
-		return us.getUserIDByFirstName(firstname);
+	@GetMapping("/users/role/{providerid}")
+	public String getUserRoleByProviderID(@PathVariable("providerid") int providerid){
+		return us.getUserRoleByProviderID(providerid);
 	}
-	*/
+	
 	@GetMapping("/users/userByname/{username}")
 	public int getProviderIDByUsername(@PathVariable("username") String username){
 		return us.getProviderIDByUserName(username);
