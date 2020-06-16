@@ -81,6 +81,12 @@ public class UsersController {
 	public int getProviderIDByUsername(@PathVariable("username") String username){
 		return us.getProviderIDByUserName(username);
 	}
+	
+	@GetMapping("/providerDetails/{providerid}")
+	public List<String> getProviderDetailsByID(@PathVariable("providerid") int providerid){
+		return us.getProviderDetailsByID(providerid);
+	}
+	
 
 	@PostMapping("/usersregister")
 	public Users postUsers(@RequestBody Users users) {
