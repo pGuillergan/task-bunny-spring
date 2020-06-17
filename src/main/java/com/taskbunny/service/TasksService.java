@@ -93,6 +93,11 @@ public class TasksService {
 		return tr.getProviderTasks(username);
 	}
 
+	public String getFirstname(String username) {
+		// TODO Auto-generated method stub
+		return tr.getFirstname(username);
+	}
+
 	
 	
 }

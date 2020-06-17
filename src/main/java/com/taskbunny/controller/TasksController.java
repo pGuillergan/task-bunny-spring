@@ -76,6 +76,7 @@ public class TasksController {
 		return ts.findByClientID(clientid);
 	}
 	
+	
 	@GetMapping("/tasks/provider/{providerid}")
 	public Collection<Tasks> getTaskByProviderID(@PathVariable("providerid") int providerid){
 		return ts.findByProviderID(providerid);
@@ -109,6 +110,10 @@ public class TasksController {
 	@GetMapping("/tasks/providerTasks/{username}")
 	public Collection<Tasks> getTaskByProvider(@PathVariable("username") String username){
 		return ts.getTaskByProvider(username,"pending");
+	}
+	@GetMapping("/tasks/getFirstName/{username}")
+	public String getFirstname(@PathVariable("username") String username){
+		return ts.getFirstname(username);
 	}
 	
 }
