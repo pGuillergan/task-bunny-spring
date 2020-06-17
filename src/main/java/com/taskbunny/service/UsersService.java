@@ -80,7 +80,7 @@ public class UsersService{
 
 
 
-	public Collection<Tasks> getClientDetails(String username) {
+	public Collection<Users> getClientDetails(String username) {
 		// TODO Auto-generated method stub
 		return ur.getClientDetails(username);
 	}

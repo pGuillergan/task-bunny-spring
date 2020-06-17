@@ -88,8 +88,8 @@ public class UsersController {
 		return us.getProviderDetailsByID(providerid);
 	}
 	
-	@GetMapping("/tasks/getClientDetails/{username}")
-	public Collection<Tasks> getClientDetails(@PathVariable("username") String username){
+	@GetMapping("/users/getClientDetails/{username}")
+	public Collection<Users> getClientDetails(@PathVariable("username") String username){
 		return us.getClientDetails(username);
 	}
 
