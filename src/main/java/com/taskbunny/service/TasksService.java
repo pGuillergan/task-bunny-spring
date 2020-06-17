@@ -83,9 +83,9 @@ public class TasksService {
 		return tr.getTaskByClientID(providerid);
 	}
 
-	public Collection<Tasks> getTaskByProvider(String username) {
+	public Collection<Tasks> getTaskByProvider(String username, String status) {
 		// TODO Auto-generated method stub
-		return tr.getTaskByProvider(username);
+		return tr.getTaskByProvider(username,status);
 	}
 
 	public Collection<Tasks> getProviderTasks(String username) {

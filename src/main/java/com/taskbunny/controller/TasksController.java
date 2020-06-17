@@ -106,7 +106,7 @@ public class TasksController {
 		return ts.findByUsername(username);
 	}
 	
-	@GetMapping("/tasks/providerTaskList/{username}")
+	@GetMapping("/tasks/providerTasks/{username}")
 	public Collection<Tasks> getTaskByProvider(@PathVariable("username") String username){
 		return ts.getTaskByProvider(username);
 	}

@@ -63,11 +63,11 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
 	
 	@Query
 	(value = "SELECT * FROM Tasks JOIN Users ON Tasks.providerid=Users.userid WHERE Users.username = :username",nativeQuery = true)
-	Collection<Tasks> getTaskByProvider(String username);
+	Collection<Tasks> getTaskByProvider(@Param("username") String username);
 	
 	@Query
-	(value = "SELECT * FROM Tasks JOIN Users ON Tasks.providerid=Users.userid  WHERE Users.username = :username AND Tasks.status='pending'",nativeQuery = true)
-	Collection<Tasks> getProviderTasks(String username);
+	(value = "SELECT * FROM Tasks JOIN Users ON Tasks.providerid=Users.userid  WHERE Users.username = :username AND Tasks.status= :status",nativeQuery = true)
+	Collection<Tasks> getProviderTasks(@Param("username") String username,@Param("status") String status);
 	
 	
 
