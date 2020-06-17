@@ -100,8 +100,8 @@ public class TasksController {
 		return ts.findByUsername(username);
 	}
 	@GetMapping("/tasks/getTaskDesc/{providerid}")
-	public String getTaskByUsername(@PathVariable("username") int providerid){
-		return ts.getTaskByUsername(providerid);
+	public Collection<Tasks> getTaskByClientID1(@PathVariable("providerid") int providerid){
+		return ts.getTaskByClientID(providerid);
 	}
 
 	

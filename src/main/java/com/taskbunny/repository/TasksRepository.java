@@ -58,8 +58,8 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
 	Collection<Tasks> findByUsername(@Param("username") String username);
 	
 	@Query
-	(value = "SELECT description FROM Tasks WHERE Tasks.clientid = :providerid",nativeQuery = true)
-	String getTaskByUsername(@Param("providerid") int providerid);
+	(value = "SELECT * FROM Tasks WHERE Tasks.clientid = :providerid",nativeQuery = true)
+	Collection<Tasks> getTaskByClientID(@Param("providerid") int providerid);
 
 	//join tasks and users by clientID and ProviderID----
 	//get, post for banktransfers
