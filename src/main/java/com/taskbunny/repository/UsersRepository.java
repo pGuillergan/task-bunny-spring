@@ -15,6 +15,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import com.taskbunny.models.Tasks;
 import com.taskbunny.models.Users;
 
 public interface UsersRepository extends JpaRepository<Users, Integer> {
@@ -45,10 +46,21 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	(value = "SELECT role FROM Users WHERE Users.userid = :providerid",nativeQuery = true)
 	String getUserRoleByProviderID(@Param("providerid") int providerid);
 	
+
+	@Query
+	(value = "SELECT firstname,lastname FROM Users WHERE Users.userid = :providerid",nativeQuery = true)
+	List<String> getProviderDetailsByID(int providerid);
+	
+	@Query
+	(value = "SELECT * FROM Users WHERE Users.username = :username",nativeQuery = true)
+	Collection<Tasks> getClientDetails(String username);
+	
+
 	@Transactional
     @Modifying
     @Query(value = "delete from Users where userid = :userid",nativeQuery = true)
 	void deleteByUserID(@Param("userid") int id);
+
 	
 	@Modifying(clearAutomatically = true)
 	@Transactional
