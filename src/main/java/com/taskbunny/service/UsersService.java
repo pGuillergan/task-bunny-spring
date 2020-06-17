@@ -69,6 +69,7 @@ public class UsersService{
 	
 	public void updateUserbyId(int userid, String username, String password, String role, String firstname, String lastname) {
 		 ur.updateUserbyId(userid, username, password, role, firstname, lastname);
+		 System.out.println(userid + username + password + role + firstname + lastname);
 	}
 
 

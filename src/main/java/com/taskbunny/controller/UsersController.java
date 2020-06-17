@@ -106,6 +106,7 @@ public class UsersController {
 	public void updateUserbyId(@PathVariable("userid") int userid,@RequestBody Users user){
 		
 		 us.updateUserbyId(userid,user.getUsername(),user.getPassword(),user.getRole(),user.getFirstname(),user.getLastname());
+		 System.out.println(userid + user.getUsername() + user.getPassword() + user.getRole() + user.getFirstname() + user.getLastname());
 		 }
 	
 	@DeleteMapping("/deleteuser/{userid}")
