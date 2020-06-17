@@ -107,7 +107,8 @@ public class UsersController {
 		
 		 us.updateUserbyId(userid,user.getUsername(),user.getPassword(),user.getRole(),user.getFirstname(),user.getLastname());
 		 System.out.println(userid + user.getUsername() + user.getPassword() + user.getRole() + user.getFirstname() + user.getLastname());
-		 }
+		 
+	}
 	
 	@DeleteMapping("/deleteuser/{userid}")
 	public void deleteByUserID(@PathVariable("userid") int id){
