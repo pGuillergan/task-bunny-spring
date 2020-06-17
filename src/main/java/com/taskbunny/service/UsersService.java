@@ -66,6 +66,10 @@ public class UsersService{
 		// TODO Auto-generated method stub
 		return ur.getProviderIDByUserName(username);
 	}
+	
+	public void updateUserbyId(int userid, String username, String password, String role, String firstname, String lastname) {
+		 ur.updateUserbyId(userid, username, password, role, firstname, lastname);
+	}
 
 
 
@@ -84,6 +88,11 @@ public class UsersService{
 
 
 	
+
+	public void deleteByUserID(int userid) {
+		ur.deleteByUserID(userid);
+	}
+
 	
 	
 }
