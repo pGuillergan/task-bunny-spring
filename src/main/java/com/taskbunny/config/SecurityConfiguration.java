@@ -49,18 +49,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().and();
-//		http.httpBasic().disable();
+		http.httpBasic().disable();
 		http.authorizeRequests()
-			.antMatchers("/role").hasAnyRole("PROVIDER","CLIENT")
-			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER")
-			.antMatchers("/users").hasRole("ADMIN")
-			.antMatchers("/providerDetails/**").hasRole("PROVIDER")
-			//.antMatchers("/tasks").hasAnyRole("CLIENT","ADMIN","PROVIDER")
-			.antMatchers("/tasks/**").hasAnyRole("CLIENT","PROVIDER")
-			.antMatchers("/tasks/**").hasRole("ADMIN")
-			.antMatchers("/task/**").hasAnyRole("PROVIDER","ADMIN")
-			.antMatchers("/tasks/status").hasAnyRole("CLIENT")
-			.antMatchers("/tasks/status/").hasAnyRole("CLIENT")
+//			.antMatchers("/role").hasAnyRole("PROVIDER","CLIENT")
+//			.antMatchers("/users").hasAnyRole("CLIENT", "PROVIDER")
+//			.antMatchers("/users").hasRole("ADMIN")
+//			.antMatchers("/providerDetails/**").hasRole("PROVIDER")
+//			//.antMatchers("/tasks").hasAnyRole("CLIENT","ADMIN","PROVIDER")
+//			.antMatchers("/tasks/**").hasAnyRole("CLIENT","PROVIDER")
+//			.antMatchers("/tasks/**").hasRole("ADMIN")
+//			.antMatchers("/task/**").hasAnyRole("PROVIDER","ADMIN")
+//			.antMatchers("/tasks/status").hasAnyRole("CLIENT")
+//			.antMatchers("/tasks/status/").hasAnyRole("CLIENT")+
+			.antMatchers("/*").permitAll()
 			.antMatchers("/", "static/css", "static/js").permitAll()
 			.and().formLogin();
 		
