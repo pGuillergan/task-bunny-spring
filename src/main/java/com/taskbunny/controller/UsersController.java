@@ -36,7 +36,7 @@ import com.taskbunny.util.JwtUtil;
 
 @RestController
 @ResponseBody
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UsersController {
 	
 	@Autowired
@@ -102,7 +102,7 @@ public class UsersController {
 	}
 	
 	
-	@PutMapping("/users/update/{usersid}")
+	@PutMapping("/users/update/{userid}")
 	public void updateUserbyId(@PathVariable("userid") int userid,@RequestBody Users user){
 		
 		 us.updateUserbyId(userid,user.getUsername(),user.getPassword(),user.getRole(),user.getFirstname(),user.getLastname());
