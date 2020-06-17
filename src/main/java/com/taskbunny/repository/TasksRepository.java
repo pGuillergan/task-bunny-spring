@@ -61,6 +61,10 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
 	(value = "SELECT * FROM Tasks WHERE Tasks.clientid = :providerid",nativeQuery = true)
 	Collection<Tasks> getTaskByClientID(@Param("providerid") int providerid);
 	
+	@Query
+	(value = "SELECT * FROM Tasks JOIN Users ON Tasks.providerid=Users.userid  WHERE Users.username = :username",nativeQuery = true)
+	Collection<Tasks> getTaskByProvider(String username);
+	
 	
 
 	//join tasks and users by clientID and ProviderID----
