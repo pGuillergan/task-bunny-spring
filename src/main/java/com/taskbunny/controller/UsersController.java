@@ -36,7 +36,7 @@ import com.taskbunny.util.JwtUtil;
 
 @RestController
 @ResponseBody
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UsersController {
 	
 	@Autowired
@@ -99,19 +99,17 @@ public class UsersController {
 	@PostMapping("/usersregister")
 	public Users postUsers(@RequestBody Users users) {
 		us.saveUser(users);
-		System.out.println(users.getUsername());
-		System.out.println(users.getPassword());
-		System.out.println(users.getFirstname());
-		System.out.println(users.getRole());
 		return users;
 	}
 	
 	
-	@PutMapping("/users/update/{usersid}")
+	@PutMapping("/users/update/{userid}")
 	public void updateUserbyId(@PathVariable("userid") int userid,@RequestBody Users user){
 		
 		 us.updateUserbyId(userid,user.getUsername(),user.getPassword(),user.getRole(),user.getFirstname(),user.getLastname());
-		 }
+		 System.out.println(userid + user.getUsername() + user.getPassword() + user.getRole() + user.getFirstname() + user.getLastname());
+		 
+	}
 	
 	@DeleteMapping("/deleteuser/{userid}")
 	public void deleteByUserID(@PathVariable("userid") int id){
