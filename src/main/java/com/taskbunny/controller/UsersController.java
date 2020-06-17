@@ -87,6 +87,12 @@ public class UsersController {
 		return us.getProviderDetailsByID(providerid);
 	}
 	
+	@GetMapping("/tasks/getClientDetails/{username}")
+	public Collection<Tasks> getClientDetails(@PathVariable("username") String username){
+		return us.getClientDetails(username);
+	}
+
+	
 
 	@PostMapping("/usersregister")
 	public Users postUsers(@RequestBody Users users) {

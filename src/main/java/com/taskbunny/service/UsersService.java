@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.taskbunny.repository.UsersRepository;
+import com.taskbunny.models.Tasks;
 import com.taskbunny.models.Users;
 
 @Service
@@ -71,6 +72,13 @@ public class UsersService{
 	public List<String> getProviderDetailsByID(int providerid) {
 		// TODO Auto-generated method stub
 		return ur.getProviderDetailsByID(providerid);
+	}
+
+
+
+	public Collection<Tasks> getClientDetails(String username) {
+		// TODO Auto-generated method stub
+		return ur.getClientDetails(username);
 	}
 
 
