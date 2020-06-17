@@ -73,9 +73,9 @@ public class UsersController {
 		return us.getProviderName(providerid);
 	}
 	
-	@GetMapping("/role/{providerid}")
-	public String getUserRoleByProviderID(@PathVariable("providerid") int providerid){
-		return us.getUserRoleByProviderID(providerid);
+	@GetMapping("/role/{username}")
+	public String getUserRoleByUsername(@PathVariable("username") String username){
+		return us.getUserRoleByUsername(username);
 	}
 	
 	@GetMapping("/users/userByname/{username}")
