@@ -81,6 +81,12 @@ public class TasksController {
 		return ts.findByProviderID(providerid);
 	}
 	
+	@GetMapping("/users/providerTasks/{username}")
+	public Collection<Tasks> getProviderTasks(@PathVariable("username") String username){
+		return ts.getProviderTasks(username);
+	}
+	
+	
 	@PutMapping("/tasks/status/{tasksid}")
 	public void updateTaskByTaskID(@PathVariable("tasksid") int tasksid,@RequestBody Tasks tasks){
 		
@@ -100,7 +106,7 @@ public class TasksController {
 		return ts.findByUsername(username);
 	}
 	
-	@GetMapping("/tasks/taskbyprovider/{username}")
+	@GetMapping("/tasks/providerTaskList/{username}")
 	public Collection<Tasks> getTaskByProvider(@PathVariable("username") String username){
 		return ts.getTaskByProvider(username);
 	}
