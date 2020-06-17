@@ -83,6 +83,11 @@ public class TasksService {
 		return tr.getTaskByClientID(providerid);
 	}
 
+	public Collection<Tasks> getTaskByProvider(String username) {
+		// TODO Auto-generated method stub
+		return tr.getTaskByProvider(username);
+	}
+
 	
 	
 }
