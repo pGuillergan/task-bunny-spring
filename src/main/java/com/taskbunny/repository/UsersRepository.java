@@ -53,7 +53,7 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	
 	@Query
 	(value = "SELECT * FROM Users WHERE Users.username = :username",nativeQuery = true)
-	Collection<Users> getClientDetails(String username);
+	Collection<Users> getClientDetails(@Param("username") String username);
 	
 
 	@Transactional
