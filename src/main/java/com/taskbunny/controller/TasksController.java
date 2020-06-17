@@ -108,7 +108,7 @@ public class TasksController {
 	
 	@GetMapping("/tasks/providerTasks/{username}")
 	public Collection<Tasks> getTaskByProvider(@PathVariable("username") String username){
-		return ts.getTaskByProvider(username);
+		return ts.getTaskByProvider(username,"pending");
 	}
 	
 }
