@@ -45,7 +45,17 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	(value = "SELECT role FROM Users WHERE Users.userid = :providerid",nativeQuery = true)
 	String getUserRoleByProviderID(@Param("providerid") int providerid);
 	
+	@Transactional
+    @Modifying
+    @Query(value = "delete from Users where userid = :userid",nativeQuery = true)
+	void deleteByUserID(@Param("userid") int id);
 	
-	
+	@Modifying(clearAutomatically = true)
+	@Transactional
+	@Query
+	(value = "UPDATE Users SET username = :username, password =:password, role =:role, firstname =:firstname, lastname=:lastname  Users WHERE Users.userid = :userid",nativeQuery = true)
+	void updateUserbyId(@Param("userid") int userid, @Param("username")String username,@Param("password")String password,@Param("role")String role,@Param("firstname")String firstname,@Param("lastname")String lastname);
 
+	
+	
 }

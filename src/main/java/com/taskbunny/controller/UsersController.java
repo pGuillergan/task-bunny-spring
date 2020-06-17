@@ -14,6 +14,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -90,6 +91,18 @@ public class UsersController {
 		System.out.println(users.getFirstname());
 		System.out.println(users.getRole());
 		return users;
+	}
+	
+	
+	@PutMapping("/users/update/{usersid}")
+	public void updateUserbyId(@PathVariable("userid") int userid,@RequestBody Users user){
+		
+		 us.updateUserbyId(userid,user.getUsername(),user.getPassword(),user.getRole(),user.getFirstname(),user.getLastname());
+		 }
+	
+	@DeleteMapping("/deleteuser/{userid}")
+	public void deleteByUserID(@PathVariable("userid") int id){
+		us.deleteByUserID(id);
 	}
 	
 	@RequestMapping(value="/authenticate", method=RequestMethod.POST)
