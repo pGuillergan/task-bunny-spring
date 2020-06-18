@@ -68,6 +68,9 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	(value = "UPDATE Users SET username = :username, password =:password, role =:role, firstname =:firstname, lastname=:lastname WHERE Users.userid = :userid",nativeQuery = true)
 	void updateUserbyId(@Param("userid") int userid, @Param("username")String username,@Param("password")String password,@Param("role")String role,@Param("firstname")String firstname,@Param("lastname")String lastname);
 	
+	@Query(value = "SELECT firstname from Users where username = :username",nativeQuery = true)
+	String getFirstName(@Param("username") String username);
+	
 	
 	
 	

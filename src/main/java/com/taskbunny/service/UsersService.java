@@ -97,6 +97,13 @@ public class UsersService{
 
 
 
+	public String getFirstName(String username) {
+		// TODO Auto-generated method stub
+		return ur.getFirstName(username);
+	}
+
+
+
 
 	
 	

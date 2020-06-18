@@ -70,7 +70,7 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer>{
 	Collection<Tasks> getTaskByProvider(@Param("username") String username,@Param("status") String status);
 	
 	@Query
-	(value = "SELECT firstname FROM Tasks JOIN Users ON Tasks.providerid=Users.userid  WHERE Users.username = :username",nativeQuery = true)
+	(value = "SELECT firstname FROM Tasks JOIN Users ON Tasks.providerid=Users.userid WHERE Users.username = :username",nativeQuery = true)
 	String getFirstname(@Param("username") String username);
 	
 	

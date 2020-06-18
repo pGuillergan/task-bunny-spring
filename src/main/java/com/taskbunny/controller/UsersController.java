@@ -93,7 +93,11 @@ public class UsersController {
 	public Collection<Users> getClientDetails(@PathVariable("username") String username){
 		return us.getClientDetails(username);
 	}
-
+	
+	@GetMapping("/getFirstName/{username}")
+	public String getFirstName(@PathVariable("username") String username){
+		return us.getFirstName(username);
+	}
 	
 
 	@PostMapping("/usersregister")
