@@ -79,7 +79,7 @@ public class UsersController {
 	}
 	
 	@GetMapping("/users/userByname/{username}")
-	public Collection<Users> getProviderIDByUsername(@PathVariable("username") String username){
+	public Collection<String> getProviderIDByUsername(@PathVariable("username") String username){
 		return us.getProviderIDByUserName(username);
 	}
 	
