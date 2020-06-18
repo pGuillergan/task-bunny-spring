@@ -83,6 +83,10 @@ public class UsersController {
 		return us.getProviderIDByUserName(username);
 	}
 	
+	@GetMapping("/users/userBynameClient/{username}")
+	public Collection<String> getUserIDByUsername(@PathVariable("username") String username){
+		return us.getUserIDByUserName(username);
+	}
 	
 	@GetMapping("/providerDetails/{providerid}")
 	public List<String> getProviderDetailsByID(@PathVariable("providerid") int providerid){

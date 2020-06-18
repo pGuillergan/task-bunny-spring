@@ -70,6 +70,10 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	
 	@Query(value = "SELECT firstname from Users where username = :username",nativeQuery = true)
 	String getFirstName(@Param("username") String username);
+
+	
+	@Query(value = "SELECT clientid FROM Users JOIN Tasks ON Users.userid=Tasks.clientid  WHERE Users.username = :username",nativeQuery = true)
+	Collection<String> getUserIDByUserName(String username);
 	
 	
 	

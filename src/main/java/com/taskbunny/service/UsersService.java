@@ -104,6 +104,13 @@ public class UsersService{
 
 
 
+	public Collection<String> getUserIDByUserName(String username) {
+		// TODO Auto-generated method stub
+		return ur.getUserIDByUserName(username);
+	}
+
+
+
 
 	
 	
