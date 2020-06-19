@@ -1,147 +1,96 @@
-2020-06-17 06:50:25 - Application shutdown requested.
-2020-06-17 06:50:25 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-06-17 06:50:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 06:50:25 - HikariPool-1 - Shutdown initiated...
-2020-06-17 06:50:25 - HikariPool-1 - Shutdown completed.
-2020-06-17 06:57:00 - Starting TaskBunnySpringApplication on Chinchinberry with PID 12612 (C:\Users\16697\Desktop\revTrain\task-bunny-spring\target\classes started by BlackSunshine in C:\Users\16697\Desktop\revTrain\task-bunny-spring)
-2020-06-17 06:57:00 - No active profile set, falling back to default profiles: default
-2020-06-17 06:57:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-06-17 06:57:01 - Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
-2020-06-17 06:57:01 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@54f5f647' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 06:57:01 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 06:57:01 - Tomcat initialized with port(s): 8081 (http)
-2020-06-17 06:57:01 - Starting service [Tomcat]
-2020-06-17 06:57:01 - Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-06-17 06:57:01 - Initializing Spring embedded WebApplicationContext
-2020-06-17 06:57:01 - Root WebApplicationContext: initialization completed in 1081 ms
-2020-06-17 06:57:01 - HikariPool-1 - Starting...
-2020-06-17 06:57:02 - HikariPool-1 - Start completed.
-2020-06-17 06:57:02 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
-2020-06-17 06:57:03 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-06-17 06:57:03 - HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-06-17 06:57:03 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-06-17 06:57:03 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2020-06-17 06:57:04 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-06-17 06:57:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 06:57:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-06-17 06:57:04 - Creating filter chain: Ant [pattern='/usersregister'], []
-2020-06-17 06:57:05 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c758a2d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3181d4de, org.springframework.security.web.header.HeaderWriterFilter@147e0734, org.springframework.web.filter.CorsFilter@d0b814d, org.springframework.security.web.authentication.logout.LogoutFilter@6d31f106, com.taskbunny.filters.JwtRequestFilter@3a788fe0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a1e57c6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@987a0bb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6ce15112, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@639c7f9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ee96866, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ba4f370, org.springframework.security.web.session.SessionManagementFilter@7b8aebd0, org.springframework.security.web.access.ExceptionTranslationFilter@60b616c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4af12a63]
-2020-06-17 06:57:05 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-06-17 06:57:05 - Tomcat started on port(s): 8081 (http) with context path ''
-2020-06-17 06:57:05 - Started TaskBunnySpringApplication in 4.916 seconds (JVM running for 5.474)
-2020-06-17 06:57:05 - App is Running Smoothly
-2020-06-17 06:58:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-17 06:58:43 - Initializing Servlet 'dispatcherServlet'
-2020-06-17 06:58:43 - Completed initialization in 6 ms
-2020-06-17 07:12:29 - Application shutdown requested.
-2020-06-17 07:12:29 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-06-17 07:12:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 07:12:29 - HikariPool-1 - Shutdown initiated...
-2020-06-17 07:12:29 - HikariPool-1 - Shutdown completed.
-2020-06-17 13:06:58 - Starting TaskBunnySpringApplication on MacBook-Pro-2.attlocal.net with PID 34838 (/Users/robertjacksonjr/RevatureBackEND/task-bunny-spring/target/classes started by robertjacksonjr in /Users/robertjacksonjr/RevatureBackEND/task-bunny-spring)
-2020-06-17 13:06:58 - No active profile set, falling back to default profiles: default
-2020-06-17 13:06:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-06-17 13:06:58 - Finished Spring Data repository scanning in 72ms. Found 4 JPA repository interfaces.
-2020-06-17 13:06:59 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6c2d4cc6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 13:06:59 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 13:06:59 - Tomcat initialized with port(s): 8081 (http)
-2020-06-17 13:06:59 - Starting service [Tomcat]
-2020-06-17 13:06:59 - Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-06-17 13:06:59 - Initializing Spring embedded WebApplicationContext
-2020-06-17 13:06:59 - Root WebApplicationContext: initialization completed in 1135 ms
-2020-06-17 13:06:59 - HikariPool-1 - Starting...
-2020-06-17 13:07:00 - HikariPool-1 - Start completed.
-2020-06-17 13:07:00 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
-2020-06-17 13:07:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-06-17 13:07:00 - HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-06-17 13:07:00 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-06-17 13:07:00 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2020-06-17 13:07:01 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-06-17 13:07:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 13:07:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-06-17 13:07:01 - Creating filter chain: Ant [pattern='/usersregister'], []
-2020-06-17 13:07:01 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b098563, org.springframework.security.web.context.SecurityContextPersistenceFilter@da09250, org.springframework.security.web.header.HeaderWriterFilter@2cae5fa7, org.springframework.web.filter.CorsFilter@c758a2d, org.springframework.security.web.authentication.logout.LogoutFilter@5f3b84bd, com.taskbunny.filters.JwtRequestFilter@4fb64a52, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d421fe, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2bfc2f8b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d0b814d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@587f4f63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f426ddd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ce15112, org.springframework.security.web.session.SessionManagementFilter@6d7b001b, org.springframework.security.web.access.ExceptionTranslationFilter@47a3d56a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7babed9e]
-2020-06-17 13:07:01 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-06-17 13:07:02 - Tomcat started on port(s): 8081 (http) with context path ''
-2020-06-17 13:07:02 - Started TaskBunnySpringApplication in 4.201 seconds (JVM running for 4.653)
-2020-06-17 13:07:02 - App is Running Smoothly
-2020-06-17 13:07:22 - Application shutdown requested.
-2020-06-17 13:07:24 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-06-17 13:07:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 13:07:24 - HikariPool-1 - Shutdown initiated...
-2020-06-17 13:07:24 - HikariPool-1 - Shutdown completed.
-2020-06-17 13:35:09 - Starting TaskBunnySpringApplication on MacBook-Pro-2.attlocal.net with PID 35171 (/Users/robertjacksonjr/RevatureBackEND/task-bunny-spring/target/classes started by robertjacksonjr in /Users/robertjacksonjr/RevatureBackEND/task-bunny-spring)
-2020-06-17 13:35:09 - No active profile set, falling back to default profiles: default
-2020-06-17 13:35:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-06-17 13:35:09 - Finished Spring Data repository scanning in 73ms. Found 4 JPA repository interfaces.
-2020-06-17 13:35:09 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@74518890' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 13:35:09 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 13:35:10 - Tomcat initialized with port(s): 8081 (http)
-2020-06-17 13:35:10 - Starting service [Tomcat]
-2020-06-17 13:35:10 - Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-06-17 13:35:10 - Initializing Spring embedded WebApplicationContext
-2020-06-17 13:35:10 - Root WebApplicationContext: initialization completed in 1066 ms
-2020-06-17 13:35:10 - HikariPool-1 - Starting...
-2020-06-17 13:35:10 - HikariPool-1 - Start completed.
-2020-06-17 13:35:10 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
-2020-06-17 13:35:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-06-17 13:35:11 - HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-06-17 13:35:11 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-06-17 13:35:11 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2020-06-17 13:35:12 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-06-17 13:35:12 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 13:35:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-06-17 13:35:12 - Creating filter chain: Ant [pattern='/usersregister'], []
-2020-06-17 13:35:12 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e2eead5, org.springframework.security.web.context.SecurityContextPersistenceFilter@34aa8b61, org.springframework.security.web.header.HeaderWriterFilter@39f42d0e, org.springframework.web.filter.CorsFilter@11d2714a, org.springframework.security.web.authentication.logout.LogoutFilter@5980fa73, com.taskbunny.filters.JwtRequestFilter@70b48eb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14ed7ddf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@112c2930, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@ca546a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@532dacf5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d6b532f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c8a445b, org.springframework.security.web.session.SessionManagementFilter@3a209918, org.springframework.security.web.access.ExceptionTranslationFilter@3afca2c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74f4a2ba]
-2020-06-17 13:35:12 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-06-17 13:35:12 - Tomcat started on port(s): 8081 (http) with context path ''
-2020-06-17 13:35:12 - Started TaskBunnySpringApplication in 4.164 seconds (JVM running for 4.617)
-2020-06-17 13:35:12 - App is Running Smoothly
-2020-06-17 13:35:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-17 13:35:55 - Initializing Servlet 'dispatcherServlet'
-2020-06-17 13:35:55 - Completed initialization in 8 ms
-2020-06-17 13:35:55 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userid' for method parameter of type int]
-2020-06-17 13:36:32 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userid' for method parameter of type int]
-2020-06-17 13:36:55 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userid' for method parameter of type int]
-2020-06-17 13:37:31 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userid' for method parameter of type int]
-2020-06-17 13:38:17 - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userid' for method parameter of type int]
-2020-06-17 13:38:29 - Application shutdown requested.
-2020-06-17 13:38:31 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-06-17 13:38:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 13:38:31 - HikariPool-1 - Shutdown initiated...
-2020-06-17 13:38:31 - HikariPool-1 - Shutdown completed.
-2020-06-17 13:38:33 - Starting TaskBunnySpringApplication on MacBook-Pro-2.attlocal.net with PID 35197 (/Users/robertjacksonjr/RevatureBackEND/task-bunny-spring/target/classes started by robertjacksonjr in /Users/robertjacksonjr/RevatureBackEND/task-bunny-spring)
-2020-06-17 13:38:33 - No active profile set, falling back to default profiles: default
-2020-06-17 13:38:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-06-17 13:38:34 - Finished Spring Data repository scanning in 69ms. Found 4 JPA repository interfaces.
-2020-06-17 13:38:34 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@64d7b720' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 13:38:34 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-06-17 13:38:34 - Tomcat initialized with port(s): 8081 (http)
-2020-06-17 13:38:34 - Starting service [Tomcat]
-2020-06-17 13:38:34 - Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-06-17 13:38:34 - Initializing Spring embedded WebApplicationContext
-2020-06-17 13:38:34 - Root WebApplicationContext: initialization completed in 1021 ms
-2020-06-17 13:38:34 - HikariPool-1 - Starting...
-2020-06-17 13:38:35 - HikariPool-1 - Start completed.
-2020-06-17 13:38:35 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
-2020-06-17 13:38:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-06-17 13:38:35 - HHH000412: Hibernate ORM core version 5.4.15.Final
-2020-06-17 13:38:36 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-06-17 13:38:36 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2020-06-17 13:38:36 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-06-17 13:38:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 13:38:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-06-17 13:38:37 - Creating filter chain: Ant [pattern='/usersregister'], []
-2020-06-17 13:38:37 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20a1b3ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@161d95c6, org.springframework.security.web.header.HeaderWriterFilter@51424203, org.springframework.web.filter.CorsFilter@54567b05, org.springframework.security.web.authentication.logout.LogoutFilter@4c04216f, com.taskbunny.filters.JwtRequestFilter@234cd86c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12fccff0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3962ec84, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a5e2525, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@439f2d87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cae66a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6546371, org.springframework.security.web.session.SessionManagementFilter@701c223a, org.springframework.security.web.access.ExceptionTranslationFilter@4628a02b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@328e4ec2]
-2020-06-17 13:38:37 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-06-17 13:38:37 - Tomcat started on port(s): 8081 (http) with context path ''
-2020-06-17 13:38:37 - Started TaskBunnySpringApplication in 4.348 seconds (JVM running for 4.84)
-2020-06-17 13:38:37 - App is Running Smoothly
-2020-06-17 13:38:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-06-17 13:38:44 - Initializing Servlet 'dispatcherServlet'
-2020-06-17 13:38:44 - Completed initialization in 6 ms
-2020-06-17 13:42:13 - Application shutdown requested.
-2020-06-17 13:42:15 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-06-17 13:42:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-06-17 13:42:15 - HikariPool-1 - Shutdown initiated...
-2020-06-17 13:42:15 - HikariPool-1 - Shutdown completed.
+2020-06-19 08:51:10 - Starting TaskBunnySpringApplicationTests on Tharindra with PID 9380 (started by terry in C:\Users\terry\OneDrive\Desktop\Java\task-bunny-spring)
+2020-06-19 08:51:10 - No active profile set, falling back to default profiles: default
+2020-06-19 08:51:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-19 08:51:12 - Finished Spring Data repository scanning in 99ms. Found 4 JPA repository interfaces.
+2020-06-19 08:51:13 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@49cf9028' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:51:13 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:51:14 - HikariPool-1 - Starting...
+2020-06-19 08:51:16 - HikariPool-1 - Start completed.
+2020-06-19 08:51:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 08:51:16 - HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-19 08:51:17 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 08:51:18 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-19 08:51:20 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 08:51:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:51:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 08:51:22 - Creating filter chain: Ant [pattern='/usersregister'], []
+2020-06-19 08:51:23 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@563263a, org.springframework.security.web.context.SecurityContextPersistenceFilter@58e02359, org.springframework.security.web.header.HeaderWriterFilter@6caa4dc5, org.springframework.web.filter.CorsFilter@53e28097, org.springframework.security.web.authentication.logout.LogoutFilter@13a268cd, com.taskbunny.filters.JwtRequestFilter@e154848, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d800a56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f0e2bdc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6e794f53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@491893f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5efe5b25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75f4d8a8, org.springframework.security.web.session.SessionManagementFilter@60c98f25, org.springframework.security.web.access.ExceptionTranslationFilter@63dc3420, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@636e4bf8]
+2020-06-19 08:51:23 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:51:23 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
+2020-06-19 08:51:24 - Started TaskBunnySpringApplicationTests in 13.933 seconds (JVM running for 17.11)
+2020-06-19 08:51:24 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:51:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:51:24 - HikariPool-1 - Shutdown initiated...
+2020-06-19 08:51:24 - HikariPool-1 - Shutdown completed.
+2020-06-19 08:53:06 - Starting TaskBunnySpringApplicationTests on Tharindra with PID 6732 (started by terry in C:\Users\terry\OneDrive\Desktop\Java\task-bunny-spring)
+2020-06-19 08:53:06 - No active profile set, falling back to default profiles: default
+2020-06-19 08:53:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-19 08:53:07 - Finished Spring Data repository scanning in 186ms. Found 4 JPA repository interfaces.
+2020-06-19 08:53:08 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5c82cd4f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:53:08 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:53:09 - HikariPool-1 - Starting...
+2020-06-19 08:53:11 - HikariPool-1 - Start completed.
+2020-06-19 08:53:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 08:53:11 - HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-19 08:53:11 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 08:53:12 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-19 08:53:13 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 08:53:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:53:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 08:53:15 - Creating filter chain: Ant [pattern='/usersregister'], []
+2020-06-19 08:53:15 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d800a56, org.springframework.security.web.context.SecurityContextPersistenceFilter@10b87ff6, org.springframework.security.web.header.HeaderWriterFilter@79b63325, org.springframework.web.filter.CorsFilter@1be77a76, org.springframework.security.web.authentication.logout.LogoutFilter@1eb906f3, com.taskbunny.filters.JwtRequestFilter@f59da34, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c71cf3e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@41938e1e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@315cf170, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d4f67e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36238b12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7878bbdb, org.springframework.security.web.session.SessionManagementFilter@32e830a0, org.springframework.security.web.access.ExceptionTranslationFilter@30af23fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ff463bb]
+2020-06-19 08:53:16 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:53:16 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
+2020-06-19 08:53:16 - Started TaskBunnySpringApplicationTests in 10.524 seconds (JVM running for 12.207)
+2020-06-19 08:53:17 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:53:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:53:17 - HikariPool-1 - Shutdown initiated...
+2020-06-19 08:53:17 - HikariPool-1 - Shutdown completed.
+2020-06-19 08:56:49 - Starting TaskBunnySpringApplicationTests on Tharindra with PID 2928 (started by terry in C:\Users\terry\OneDrive\Desktop\Java\task-bunny-spring)
+2020-06-19 08:56:49 - No active profile set, falling back to default profiles: default
+2020-06-19 08:56:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-19 08:56:49 - Finished Spring Data repository scanning in 64ms. Found 4 JPA repository interfaces.
+2020-06-19 08:56:50 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c6aa04a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:56:50 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:56:51 - HikariPool-1 - Starting...
+2020-06-19 08:56:53 - HikariPool-1 - Start completed.
+2020-06-19 08:56:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 08:56:53 - HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-19 08:56:53 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 08:56:54 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-19 08:56:55 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 08:56:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:56:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 08:56:57 - Creating filter chain: Ant [pattern='/usersregister'], []
+2020-06-19 08:56:57 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@225e09f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@135e49b2, org.springframework.security.web.header.HeaderWriterFilter@323e026d, org.springframework.web.filter.CorsFilter@bc8d68b, org.springframework.security.web.authentication.logout.LogoutFilter@60c98f25, com.taskbunny.filters.JwtRequestFilter@67c21bf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6de610c6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36238b12, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2fa212df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10b87ff6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41167ded, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cf8a235, org.springframework.security.web.session.SessionManagementFilter@79b63325, org.springframework.security.web.access.ExceptionTranslationFilter@1e477944, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ffa91dc]
+2020-06-19 08:56:58 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:56:58 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
+2020-06-19 08:56:58 - Started TaskBunnySpringApplicationTests in 10.024 seconds (JVM running for 11.407)
+2020-06-19 08:56:59 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:56:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:56:59 - HikariPool-1 - Shutdown initiated...
+2020-06-19 08:56:59 - HikariPool-1 - Shutdown completed.
+2020-06-19 08:59:34 - Starting TaskBunnySpringApplicationTests on Tharindra with PID 15560 (started by terry in C:\Users\terry\OneDrive\Desktop\Java\task-bunny-spring)
+2020-06-19 08:59:34 - No active profile set, falling back to default profiles: default
+2020-06-19 08:59:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-19 08:59:35 - Finished Spring Data repository scanning in 163ms. Found 4 JPA repository interfaces.
+2020-06-19 08:59:36 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7ce9e05a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:59:36 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-19 08:59:36 - HikariPool-1 - Starting...
+2020-06-19 08:59:38 - HikariPool-1 - Start completed.
+2020-06-19 08:59:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 08:59:38 - HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-19 08:59:39 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 08:59:39 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-19 08:59:40 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 08:59:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:59:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 08:59:42 - Creating filter chain: Ant [pattern='/usersregister'], []
+2020-06-19 08:59:42 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7769d9b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@74764622, org.springframework.security.web.header.HeaderWriterFilter@41938e1e, org.springframework.web.filter.CorsFilter@248d3a, org.springframework.security.web.authentication.logout.LogoutFilter@4cc7e3ad, com.taskbunny.filters.JwtRequestFilter@3212d853, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b33fff9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@46e388ec, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3c71cf3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20c3b34b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@491893f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@636e4bf8, org.springframework.security.web.session.SessionManagementFilter@77ff14ce, org.springframework.security.web.access.ExceptionTranslationFilter@13e1e816, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@136fece2]
+2020-06-19 08:59:43 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:59:43 - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://taskbunny.c7zvguphsbzk.us-east-2.rds.amazonaws.com:5432/taskbunny'
+2020-06-19 08:59:43 - Started TaskBunnySpringApplicationTests in 9.473 seconds (JVM running for 10.847)
+2020-06-19 08:59:44 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-19 08:59:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 08:59:44 - HikariPool-1 - Shutdown initiated...
+2020-06-19 08:59:44 - HikariPool-1 - Shutdown completed.
